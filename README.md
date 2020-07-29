@@ -1,5 +1,5 @@
-# TIL
+# TIL :book:
 ## TODAY I LEARN
 
 200729
-HTML시작
+`HTML시작`
