@@ -5,7 +5,7 @@
 <br> img src= 이미지링크 </br>
 <br> !doctype html - 문서시작알리는코드 </br>
 <br> html </br>
-<br> head-본문설명태그 (title-상단탭 이름변경, utf-본문설명) </br> 
+<br> head-본문설명태그 (title-상단탭 이름변경, utf-본문설명) /head </br> 
 <br> body- 본문 </br>
-<br> /html </br>
+<br> /html /body </br>
 <br> (a href="링크" target=blank-새창을 엽니다) 이동할까요? (/a) </br>
