@@ -10,3 +10,13 @@
 <br> body- 본문 </br>
 <br> /html /body </br>
 <br> (a href="링크" target=blank-새창을 엽니다) 이동할까요? (/a) </br>
+
+## 200805
+<br> 1-html 복습도중 웹호스팅에서 두시간반이나 걸렸다..💦<br>
+사진업로드가 되지를 않았다.. 결국 p(단락나누기)가 문제였다<br>
+이미지태그전엔 앞뒤 꼭 확인하기!<br>
+첫 웹호스팅 완료 😪<br>
+
+
+2- 태그과정에서 file:///C:/Users/Hakyeong/Desktop/yeonju/2.html 로 태그걸었더니 표시할수없음으로뜸 <br>
+a href=https://ddangju.github.io/myweb/cozyphoto1 로 변경하였더니 페이지가 넘어갔다<br>
