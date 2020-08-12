@@ -19,4 +19,5 @@
 
 
 2- 태그과정에서 file:///C:/Users/Hakyeong/Desktop/yeonju/2.html 로 태그걸었더니 표시할수없음으로뜸 <br>
-a href=https://ddangju.github.io/myweb/cozyphoto1 로 변경하였더니 페이지가 넘어갔다<br>
+a href=https://ddangju.github.io/myweb/cozyphoto1 로 변경하였더니 페이지가 넘어갔음<br>
+
