@@ -51,7 +51,7 @@ print(result)
 
 `약자`
 
-d : demical   print("%d"%) 숫자 <br>
+d : decimal   print("%d"%) 숫자 <br>
 f : float (소수)  print("%f"%) 소수뒷자리 그대로 노출 or print("%.1f") 소수뒷자리 생략 <br>
 int : inteager(정수) (문자열->숫자) <br>
 s : string <br>
