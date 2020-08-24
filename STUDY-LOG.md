@@ -107,3 +107,18 @@ second = 100 % 60
 print("%d분 %d초" % (minute, second))
 
 
+##200818
+
+`if-elif-else`
+ 
+
+*if - 조건이 참일때 실행한다 
+
+*elif - 조건이 참일때 if가 True가 아니면 elif 실행 
+
+*else - 조건이 거짓일때 실행한다 
+
+<u>if가 True 라면 아래 elif,else는 무시하고 넘어가게된다!! </u>
+
+
+
