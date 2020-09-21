@@ -150,10 +150,12 @@ print("%d분 %d초" % (minute, second))
 (태그name attribute="값")
 
 
-[a href = "주소링크"  target="_blank"] go google </a>
+[a href = "주소링크"  target=" "] go google </a>
 
 
-: 새로운 탭으로 창이 열린다
+target속성 <br>
+_blank : 새로운 탭으로 창이 열린다 <br>
+_self : 현재 윈도우 <br>
 
 
 `form tags`
@@ -181,7 +183,9 @@ id의 값은 고유하고 태그는 하나의 id만 가질 수 있다
 
 `div` 
 
-분할,구분해주는 기능 
+분할,구분해주는 기능<br>
+여러 html 태그들을 블록으로 묶어 컨테이너 역할을 한다<br>
+div블록 전체에 동일한 css 스타일을 적용할 수 있다<br>
 
 [div id = "header"] or [header] 둘다 사용 가능하다 <br>
 의미를 파악하기위해 div대신 header 사용한다 
