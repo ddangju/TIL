@@ -121,4 +121,38 @@ print("%d분 %d초" % (minute, second))
 <u>if가 True 라면 아래 elif,else는 무시하고 넘어가게된다!! </u>
 
 
+## 200921
+
+#### `head`
+
+
+웹사이트 환결설정 할 수 있다
+
+
+[title] tab설명 바뀐다
+
+
+[meta tag] 구글검색시 보여지는 description. 
+
+
+[link rel = "shortcut icon" sizes = "16x16 32x32 64x64" href="이미지주소" /] 탭의 이미지가 바뀐다
+ 
+ 
+#### `body`
+
+
+외부적 출력된다
+
+
+'a(anchor)'
+
+
+(태그name attribute="값")
+
+
+[a href = "주소링크"  target="_blank"] go google </a>
+
+
+: 새로운 탭으로 창이 열린다
+
 
