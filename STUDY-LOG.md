@@ -156,3 +156,34 @@ print("%d분 %d초" % (minute, second))
 : 새로운 탭으로 창이 열린다
 
 
+`form tags`
+
+input은 하나or여러개의 type을 가질 수 있다
+
+
+[input type = "color" type="password" type="text"]
+
+
+`label`
+
+input과 함께 작동한다
+
+
+[label for ="first"] my page [/label]
+
+[input id ="first" type="text"]
+
+*for와 id의 값은 동일해야한다
+
+*for과 같은값인 id를 들고있는 input을 작동시킨다 
+
+id의 값은 고유하고 태그는 하나의 id만 가질 수 있다 
+
+`div` 
+
+분할,구분해주는 기능 
+
+[div id = "header"] or [header] 둘다 사용 가능하다 <br>
+의미를 파악하기위해 div대신 header 사용한다 
+
+
