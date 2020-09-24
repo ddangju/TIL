@@ -191,3 +191,40 @@ div블록 전체에 동일한 css 스타일을 적용할 수 있다<br>
 의미를 파악하기위해 div대신 header 사용한다 
 
 
+## 200924
+
+#### `css 추가하는 방법`
+
+
+같은 HTML파일에 CSS코드 작성하거나
+
+HTML와 CSS분리하는 방법.(보편적이다)
+ 
+ 
+ 
+ ##### `html와css를 같은 파일에 두는 경우`
+
+
+style태그는 head 안에 있어야한다
+
+
+[style]
+
+
+selector(태그지정) { 컬러속성 : 색상; 
+
+                    글씨크기: 크기값;
+                     
+                     }
+                     
+[style]
+
+방식으로 전개된다 
+
+or
+
+style.css 파일 생성후 head 안에서
+
+[Link href = "style.css" rel = "stylesheets" / ]
+
+
