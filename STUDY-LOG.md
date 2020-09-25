@@ -198,7 +198,8 @@ div블록 전체에 동일한 css 스타일을 적용할 수 있다<br>
 
 같은 HTML파일에 CSS코드 작성하거나
 
-HTML와 CSS분리하는 방법.(보편적이다)
+
+HTML와 CSS분리하는 방법.(보편적방법)
  
  
  
@@ -211,11 +212,12 @@ style태그는 head 안에 있어야한다
 [style]
 
 
-selector(태그지정) { 컬러속성 : 색상; 
 
-                    글씨크기: 크기값;
+selector(태그지정) { 컬러속성 : 색상값; 
+
+                  글씨크기: 크기값;
                      
-                     }
+                  }
                      
 [style]
 
@@ -226,5 +228,17 @@ or
 style.css 파일 생성후 head 안에서
 
 [Link href = "style.css" rel = "stylesheets" / ]
+
+
+block 은 옆요소에 다른요소가 오지 않는다
+
+ex) box
+    box
+    box
+    
+    
+inline 은 옆요소에 다른요소가 올 수 있다
+
+span, a,image
 
 
