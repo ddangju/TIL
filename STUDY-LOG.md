@@ -230,6 +230,8 @@ style.css 파일 생성후 head 안에서
 [Link href = "style.css" rel = "stylesheets" / ]
 
 
+
+
 block 은 옆요소에 다른요소가 오지 않는다
 
 ex) box
