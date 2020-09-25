@@ -239,8 +239,59 @@ ex) box
     box
     
     
-inline 은 옆요소에 다른요소가 올 수 있다
+inline 은 옆요소에 다른요소가 올 수 있다<br>
+너비와 높이는 적용되지 않는다<br>
+inline의 종류 : span, a, image
 
-span, a,image
+
+block의 세가지요소는 margine, border, padding이 있다
+
+`margine`
+
+box의 경계 밖<br>
+box생성시 나타나는 margine은 브라우저가 생성한다<br>
+margine을 생략할시 margine=margine:0; ,<br>
+또한 사방에 마진값을 줄 수 있다
 
 
+`padding`
+
+
+box의 경계안<br>
+div 4개를 각 크기를 다르게 생성하는경우<br>
+태그 or id를 주어 id를 가르킨다<br>
+id를 가르킬땐 style태그 안에서 #first  이와 같이 할 수 있다 <br>
+
+
+`border`
+
+box의 경계 <br>
+경계스타일 적용시 border { 너비 스타일 색상값;} <br>
+모든 border 스타일 적용시 * { } 태그 적용한다 <br>
+전체 적용된 스타일에서 교체하고 싶은 스타일 적용시, <br>
+지정해서 변경 가능하다 <br>
+ex) span {border-style : dotted;}
+
+
+`class`
+
+
+예시 <br>
+
+
+` 
+크기가20px 하는 빨간 토마토,
+크기가 20px 하는 노란 바나나 `
+
+
+
+[style] <br>
+.big{20px} <br>
+.tomato {color : red;} <br>
+.banana {color : yellow;} <br>
+ 
+ 
+ [body] <br>
+ span class = " big tomato" <br>
+ span class = " big banana"
+ 
