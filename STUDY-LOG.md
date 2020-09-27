@@ -202,24 +202,23 @@ div블록 전체에 동일한 css 스타일을 적용할 수 있다<br>
 HTML와 CSS분리하는 방법.(보편적방법)
  
  
- 
- ##### `html와css를 같은 파일에 두는 경우`
-
+##### html와css를 같은 파일에 두는 경우
 
 style태그는 head 안에 있어야한다
 
 
-[style]
-
-
-
+```
+<style>
 selector(태그지정) { 컬러속성 : 색상값; 
 
                   글씨크기: 크기값;
                      
                   }
+                 
+</style>
+```                  
                      
-[style]
+
 
 방식으로 전개된다 
 
@@ -284,14 +283,23 @@ ex) span {border-style : dotted;}
 크기가 20px 하는 노란 바나나 `
 
 
+```
+<style> 
 
-[style] <br>
-.big{20px} <br>
-.tomato {color : red;} <br>
-.banana {color : yellow;} <br>
+.big{20px} 
+
+.tomato {color : red;} 
+
+.banana {color : yellow;} 
+
+```
  
  
- [body] <br>
- span class = " big tomato" <br>
+ ```
+ <body>
+ 
+ span class = " big tomato" 
+ 
  span class = " big banana"
  
+ ```
