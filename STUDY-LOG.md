@@ -193,7 +193,7 @@ div블록 전체에 동일한 css 스타일을 적용할 수 있다<br>
 
 ## 200924
 
-#### `css 추가하는 방법`
+#### css 추가하는 방법
 
 
 같은 HTML파일에 CSS코드 작성하거나
@@ -245,7 +245,7 @@ inline의 종류 : span, a, image
 
 block의 세가지요소는 margine, border, padding이 있다
 
-`margine`
+###  margine
 
 box의 경계 밖<br>
 box생성시 나타나는 margine은 브라우저가 생성한다<br>
@@ -253,7 +253,7 @@ margine을 생략할시 margine=margine:0; ,<br>
 또한 사방에 마진값을 줄 수 있다
 
 
-`padding`
+### padding
 
 
 box의 경계안<br>
@@ -262,7 +262,7 @@ div 4개를 각 크기를 다르게 생성하는경우<br>
 id를 가르킬땐 style태그 안에서 #first  이와 같이 할 수 있다 <br>
 
 
-`border`
+### border
 
 box의 경계 <br>
 경계스타일 적용시 border { 너비 스타일 색상값;} <br>
@@ -272,7 +272,7 @@ box의 경계 <br>
 ex) span {border-style : dotted;}
 
 
-`class`
+### class
 
 
 예시 <br>
