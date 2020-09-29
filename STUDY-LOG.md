@@ -193,16 +193,35 @@ div블록 전체에 동일한 css 스타일을 적용할 수 있다<br>
 
 ## 200924
 
-#### css 추가하는 방법
+### css 추가하는방법
 
 
-같은 HTML파일에 CSS코드 작성하거나
+같은 HTML파일에 CSS코드 작성하거나 [internal]
 
 
-HTML와 CSS분리하는 방법.(보편적방법)
+HTML와 CSS분리하는 방법.(보편적방법) [external]
+
+
+block 은 옆요소에 다른요소가 오지 않는다
+
+
+block의 세가지요소는 `margine, border, padding` 이 있다
+
+ex) box
+    box
+    box
+    
+    
+inline 은 옆요소에 다른요소가 올 수 있다<br>
+너비와 높이는 적용되지 않는다<br>
+inline의 요소는 `span, a, image`
+
+ex) hello hello hello
+
+
  
  
-##### html와css를 같은 파일에 두는 경우
+##### style 작성방법
 
 style태그는 head 안에 있어야한다
 
@@ -214,7 +233,11 @@ selector(태그지정) { 컬러속성 : 색상값;
                   글씨크기: 크기값;
                      
                   }
-                 
+                  
+div { height: 150px;
+        width: 150px;
+        }
+        
 </style>
 ```                  
                      
@@ -231,19 +254,7 @@ style.css 파일 생성후 head 안에서
 
 
 
-block 은 옆요소에 다른요소가 오지 않는다
 
-ex) box
-    box
-    box
-    
-    
-inline 은 옆요소에 다른요소가 올 수 있다<br>
-너비와 높이는 적용되지 않는다<br>
-inline의 종류 : span, a, image
-
-
-block의 세가지요소는 margine, border, padding이 있다
 
 ###  margine
 
