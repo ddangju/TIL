@@ -7,21 +7,21 @@
 
 #### display : flex;   -선언시작 
 
-flex-direction: 속성;   -선언후 배치방향설정(속성)
+flex-direction: 속성;   -선언후 배치방향설정(속성) <br>
 
 속성에는
 
 
 
-
-row
+```
+row -
 
 row-reverse 
 
 column
 
 column-reverse
-
+```
 
 
 
