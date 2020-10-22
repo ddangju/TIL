@@ -11,7 +11,9 @@ flex-direction: 속성;   -선언후 배치방향설정(속성)
 
 속성에는
 
-````
+
+
+
 row
 
 row-reverse 
@@ -20,7 +22,18 @@ column
 
 column-reverse
 
-```
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### flex-wrap    - 한줄에 여유공간 없을때 어떻게 할것인지 설정
 
