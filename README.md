@@ -1,5 +1,5 @@
-<h1> TIL💙 </h1> 	
-<h2> TODAY I LEARN </h2>
+
+<h1> TODAY I LEARN🍒</h1>
 
 <br>
 
