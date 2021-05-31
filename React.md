@@ -97,6 +97,8 @@ node 기반의 패키지를 사용하려면 npm이라는 패키지 도구가 필
 
 CRA는 **바벨과 웹팩** 과 같이 다양한 패키지가 포함되어 있으며 기존 기능을 개선하거나 새로운 기능을 추가했을 때 패키지 버전만 올리면 된다.
 
+<br>
+
 ### :: node.modules, package.json, gitignore
 
 1) node.modules
