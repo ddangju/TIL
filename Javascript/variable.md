@@ -51,7 +51,7 @@ console.log(a); // ReferenceError: a is not defined
 
 ## 2) 블럭 스코프
 
-const,let을 사용하여 함수 내에서 선언된 변수들은 내부에서만 접근이 가능하고 **외부**에서 접근할 수가 없다.
+const,let을 사용하여 블럭 내에서 선언된 변수들은 내부에서만 접근이 가능하고 **외부**에서 접근할 수가 없다.
 하지만 var경우 내부와 외부에서 접근이 가능하다.
 
 변수선언 var 사용예시 )
@@ -81,7 +81,7 @@ console.log(a); ///ReferenceError: a is not defined
 
 ## 호이스팅 (hoisting)
  
-호이스팅이란? 함수 안에 잇는 선언들을 모두 끌어올려서 해당 함수 유효 범위의 최상단에 선언하는 것을 말한다.
+호이스팅이란? 함수 내부의 선언들을 모두 끌어올려서 해당 함수 유효 범위의 최상단에 선언하는 것을 말한다.
 
 `함수선언식`의 경우와 `var` 변수 선언에서 일어난다.
 
@@ -108,7 +108,7 @@ var 변수 선언 예시 )
 
 ```jsx
 
-cosole.log(a);  //undefiend
+console.log(a);  //undefiend
 
 var a = 3;
 
