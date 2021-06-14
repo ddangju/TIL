@@ -16,7 +16,7 @@ var a = apple;
 
 let b = banana;
 
-const c = kiwi
+const c = kiwi;
 
 ```
 
