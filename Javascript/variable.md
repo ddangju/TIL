@@ -108,7 +108,7 @@ var 변수 선언 예시 )
 
 ```jsx
 
-console.log(a);  //undefiend
+console.log(a);  //undefined
 
 var a = 3;
 
@@ -117,7 +117,7 @@ var a = 3;
 ```jsx
 
 var a; 
-console.log(a); //undefiend
+console.log(a); //undefined
 a = 3;
 console.log(a); //3
 
