@@ -6,8 +6,24 @@
 
 >**Promise**는 주로 서버에서 받아온 데이터를 화면에 표시할 때 사용한다. 일반적으로 웹을 구현할 때 서버에서 데이터를 요청하고 받아오기 위해 사용한다.
 
+# promise 의 상태
 
+`promise`는 3가지 상태를 가질 수 있다.
 
+- pendding : 대기 상태로서 resolve 나 reject 할 지 결정되지 않은 초기 상태이다.
+- fullfilled : 이행 상태로서 연산이 성공적으로 완료된 상태
+-  rejected : 거부 상태로서 연산이 실패한 상태이다.
+
+# promise의 형태
+
+```jsx
+const promise = new Promise((resolve, reject) =>{});
+
+console.log(promise);
+//promise { <pending>}
+```
+
+<br>
 
 ```jsx
 const promise = new Promise((resolve, reject)=>{
