@@ -26,3 +26,31 @@ props는 컴포넌트 외부에서 데이터를 받는다.
 
 `state`를 업데이트 해줄 때 `setState()`함수를 호출하여 전체적인 state를 업데이트 해줘야한다. 
 
+**문제점?** 
+
+`setState()`는 컴포넌트를 항상 즉각적으로 갱신하지는 않는다. 이로 인해 호출하자마자 `this.state` 에 접근하는 것이 문제가 될 수 있다.
+
+대신에 사용하는것이 `componentDidUpdate` 또는 `setState`의 콜백을 사용한다. 
+
+
+---
+
+# 예제
+
+state는 직접 변경하면 안된다. 
+
+대신 `state`와 `props`를 기반으로 새로운 객체를 만들어 변경 사항을 표현해야 한다. 
+
+예를들어 어떤 값을 증가하고 싶을 때
+
+```jsx
+
+this.setState((state, props) => {
+  return {counter: state.counter + props.step};
+});
+
+``` 
+
+여기서 두번째 인자는 `setState`가 실행이 완료되고 컴포넌트가 다시 재랜더링된 뒤에 실행될 함수에 대한 `콜백`이다.(생략가능) 
+
+이런 방식에서는 `componentUpdate()`를 사용한다. 
