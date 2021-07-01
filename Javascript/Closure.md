@@ -62,8 +62,9 @@ function b() {
   return displayName;
   
   var a = b();
-//myFunc변수에 displayName을 리턴함
+//a변수에 displayName을 리턴함
 //유효범위의 어휘적 환경을 유지
+
 a();
 //리턴된 displayName 함수를 실행(name 변수에 접근)
 
