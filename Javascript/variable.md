@@ -85,7 +85,9 @@ console.log(a); ///ReferenceError: a is not defined
 
 **함수 선언식, var, let, const** 는 **호이스팅** 이 일어난다. 
 
-**Var의 경우** 선언과 초기화가 동시에 일어나기 때문에 호이스팅이 되면 **undefined(초기화)**가 일어난다. 
+**Var의 경우** 선언과 초기화가 동시에 일어나기 때문에 호이스팅이 되면 **undefined**가 일어난다. 
+
+<br>
 
 
 var의 경우 예제)
@@ -100,10 +102,11 @@ console.log(a); /// 1
 
 ```
 
+<br>
 
 
-함수선언식 경우 예제
-)
+함수선언식 경우 예제)
+
 
 ```jsx
 catName("Chloe"); ///함수호출이 먼저 일어난다
@@ -115,6 +118,8 @@ function catName(name) {
 위 코드의 결과는: "My cat's name is Chloe" 
 */
 ```
+
+<br> 
 
 
 하지만 **let과 const**의 경우에는 호이스팅이 일어나지만 선언과 초기화가 분리되어 진행되는데,
