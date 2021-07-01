@@ -81,47 +81,57 @@ console.log(a); ///ReferenceError: a is not defined
 
 ## 호이스팅 (hoisting)
  
-호이스팅이란? 함수 내부의 선언들을 모두 끌어올려서 해당 함수 유효 범위의 최상단에 선언하는 것을 말한다.
+호이스팅이란? 함수 내부의 **선언문**을 모두 끌어올려서 해당 함수 유효 범위의 최상단에 선언하는 것을 말한다.
 
-`함수선언식`의 경우와 `var` 변수 선언에서 일어난다.
+**함수 선언식, var, let, const** 는 **호이스팅** 이 일어난다. 
 
-`var`는 함수 호출 이후 변수를 선언해도 함수가 호출된다.
-
-const와 let은 호이스팅이 일어나지 않는다.
+**Var의 경우** 선언과 초기화가 동시에 일어나기 때문에 호이스팅이 되면 **undefined(초기화)**가 일어난다. 
 
 
-
-함수선언식 예시 )
+var의 경우 예제)
 
 ```jsx
-catName("Chloe");
+
+console.log(a); ////undefined(초기화)
+
+var a = 1
+
+console.log(a); /// 1 
+
+```
+
+
+
+함수선언식 경우 예제
+)
+
+```jsx
+catName("Chloe"); ///함수호출이 먼저 일어난다
 
 function catName(name) {
   console.log("My cat's name is " + name);
 }
 /*
-위 코드의 결과는: "My cat's name is Chloe"
+위 코드의 결과는: "My cat's name is Chloe" 
 */
 ```
 
-var 변수 선언 예시 )
+
+하지만 **let과 const**의 경우에는 호이스팅이 일어나지만 선언과 초기화가 분리되어 진행되는데,
+
+호이스팅이 되면 선언이 진행되고 초기화는 진행되지 않아 `RefeerenceError`가 뜬다. 
+
+선언만 되었기 때문에 **참조오류**가 뜬다. 
+
+(let과 const가 호이스팅이 일어나지 않는다고 착각하지말자!)
 
 ```jsx
+ console.log(a);///ReferenceError: a is not defined
 
-console.log(a);  //undefined
+let a = 1
 
-var a = 3;
-
+console.log(a);
 ```
 
-```jsx
-
-var a; 
-console.log(a); //undefined
-a = 3;
-console.log(a); //3
-
-
-```
 
 
