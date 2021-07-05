@@ -57,4 +57,11 @@ let a = 1
 console.log(a);
 ```
 
+<br>
+
+# Temporal Dead Zone 
+
+위의 예제와 같이 **var와 let/const**와 같은 범위 차이는 **TDZ**에 의해 제약을 받는다는 것이다. 
+
+즉, let/const 경우 변수가 초기화되기 전에 엑세스 하려고 하면 `ReferenceError`가 발생한다. 이는 호이스팅을 수행하기 때문에 나타나는 에러이다. 
 
