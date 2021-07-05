@@ -79,5 +79,8 @@ console.log(a); ///ReferenceError: a is not defined
 
 <br>
 
+`var, let, const`는 hoisting이 일어난다. 더 자세한 것은 아래 링크를 통해 알아보자
 
 
+
+[호이스팅](https://github.com/ddangju/TIL/blob/master/Javascript/hoisting.md)🧐
