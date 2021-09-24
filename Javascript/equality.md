@@ -1,7 +1,7 @@
 ## 예시
 
 
-```
+```js
 const a = { name: "yeon" };
 const b = { name: "yeon" };
 const c = a;
