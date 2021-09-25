@@ -3,7 +3,7 @@
 
 ```js
 
-{key:value}
+{key:value} //key와 value로 이루어져있다
 
 ```
 
