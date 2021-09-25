@@ -11,7 +11,7 @@
 
 객체는 여러 속성을 하나의 변수에 저장할 수 있도록 해주는 데이터 타입이다
 
-## 예제 )
+### 예제)
 
 ```js
 
@@ -29,13 +29,14 @@ function info(name,age){
   
   <br>
  
+ 
  만약에 들어가는 인자 값이 점점 많아진다면?
  
  계속해서 변수에 값을 할당하고 받는 인자도 늘어날것이다 
  
  데이터 값이 늘어나는것을 간편하게 작성하기 위해서 object를 사용할 수 있다.
  
- <br>
+
  
  ```js
  
@@ -51,7 +52,6 @@ function info(name,age){
  
  ```
  
- <br>
  
  # object의 property는 어떻게 가져올 수 있을까? 
 
@@ -59,16 +59,11 @@ function info(name,age){
 > object.key 또는 object[key] 로 접근할 수 있다!
 
 
-## 예제 )
-
-<br>
-
+### 예제)
 
 ```js
 
 const kozy = {name: "kozy", age: 20};
-
-
 
 
 function print(obj,key) {
@@ -103,9 +98,9 @@ print(kozy, "name")
  
  여기서 computed속성에 대해 더 알아보자
  
- ## 예시)
+ ### 예제)
  
- <br>
+ 
  
  ```js
  
