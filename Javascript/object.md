@@ -53,7 +53,7 @@ function info(name,age){
  ```
  
  
- # object의 property는 어떻게 가져올 수 있을까? 
+ # object의 value는 어떻게 가져올 수 있을까? 
 
  
 > object.key 또는 object[key] 로 접근할 수 있다!
