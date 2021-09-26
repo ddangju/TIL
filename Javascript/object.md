@@ -1,5 +1,30 @@
-# Object
+# Object(객체)
 
+
+자바스크립트를 이루고 있는 거의 모든 것은 **객체**이다. 
+
+객체는 여러 속성을 하나의 변수에 저장할 수 있도록 해주는 데이터 타입이다
+
+
+<br>
+
+
+
+## Object를 만드는 방법은?
+
+```js
+
+const obj = {} //브라캣을 사용한 객체리터럴
+
+const obj2 = new Object();  /// new 키워드를 사용하여 만든다
+
+```
+
+
+<br>
+
+
+## object 의 구성은
 
 ```js
 
@@ -7,9 +32,10 @@
 
 ```
 
-자바스크립트를 이루고 있는 거의 모든 것은 **객체**이다. 
 
-객체는 여러 속성을 하나의 변수에 저장할 수 있도록 해주는 데이터 타입이다
+
+<br>
+
 
 ### 예제)
 
@@ -36,6 +62,8 @@ function info(name,age){
  
  데이터 값이 늘어나는것을 간편하게 작성하기 위해서 object를 사용할 수 있다.
  
+ 
+ 
 
  
  ```js
@@ -53,10 +81,19 @@ function info(name,age){
  ```
  
  
- # object의 value는 어떻게 가져올 수 있을까? 
+ <br>
+ 
+ 
+ ## object의 value는 어떻게 가져올 수 있을까? 
+ 
+ 
+ <br>
 
  
 > object.key 또는 object[key] 로 접근할 수 있다!
+
+
+ <br>
 
 
 ### 예제)
@@ -98,7 +135,10 @@ print(kozy, "name")
  
  여기서 computed속성에 대해 더 알아보자
  
- ### 예제)
+ 
+ <br>
+ 
+ ### computed속성 예제)
  
  
  
@@ -121,6 +161,28 @@ a.b는 b의값 1이 나오게 된다!
 
  
  
+<br>
+
+## object에 property를 추가할 수 있을까? : 네 
+
+```js
+
+const print = { name: "yeon", age:20 };
+/// 이미 print에 객체를 할당했다
+
+print.hasJob = true; 
+
+//그리고 뒤늦게 객체를 추가할 수 있고 삭제할수도 있다. 
+
+delete.print.hasJob;  
+
+
+//하지만 error를 피하기 위해서 사용하지 않는 것이 좋다. 
+
+```
+ 
+ <br>
  
  
+ ## 
   
