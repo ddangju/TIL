@@ -46,7 +46,8 @@ for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
 }
 
-///'apple', 'banana'
+///'apple'
+///'banana'
 
 ```
 
@@ -62,7 +63,8 @@ for (let fruit of fruits){
   console.log(fruit)
 }
 
-///'apple', 'banana'
+///'apple'
+/// 'banana'
 
 ```
 
@@ -77,12 +79,12 @@ for (let fruit of fruits){
 
 ```js
 
-fruits.forEach((fruit, index) => 
-  console.log(fruit, index))
+fruits.forEach((fruit, index) => {
+  console.log(fruit, index)})
 
 
-/// 'apple' 0
-/// 'banana' 1
+/// 'apple', 0
+/// 'banana', 1
 
 ```
 
