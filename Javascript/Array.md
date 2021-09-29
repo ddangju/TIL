@@ -108,7 +108,7 @@ fruits2.push("peach")
 console.log("1:",fruits2) // [ 'apple', 'banana', 'peach' ] //새로운 배열의 길이가 아니라 추가된 배열이 나온다.
 
 const fruits3 = fruits.push("kiwi")
-console.log(fruits3) /// 4 /// push()메서드 자체를 변수에 할당하여 console.log를 호출하면 길이가 나온다. 
+console.log(fruits3) /// 3 /// push()메서드 자체를 변수에 할당하여 console.log를 호출하면 길이가 나온다. 
   
  ```
   
@@ -134,7 +134,7 @@ console.log(fruits);  /// ["apple"]
  ```js
  const fruits = ["apple","banana"]
 
- console.log(fruits.unshift("strawberry", "lemon") /// 새로운 길이 4가 반환된다. 
+ console.log(fruits.unshift("strawberry", "lemon")) /// 새로운 길이 4가 반환된다. 
  console.log(fruits)  /// [ 'strawberry', 'lemon', 'apple', 'banana' ]
   
   ```
