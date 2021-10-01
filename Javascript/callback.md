@@ -62,8 +62,8 @@ printWithDelay(() => console.log('async callback'), 2000);
 ```
 
 위에서부터 아래로 한줄 씩 코드가 실행되는데  <br>
-'2'를 실행할 코드는 1초뒤에 실행되기 때문에 '3'과' hello'가 먼저 실행되고 1초가 지나면 그 이후 '2`가 출력된다. <br>
-그리고 `printWithDelay'함수가 호출되면서 2초가 지난 후 async callback를 출력한다. <br>
+'2'를 실행할 코드는 1초뒤에 실행되기 때문에 '3'과' hello'가 먼저 실행되고 1초가 지나면 그 이후 '2'가 출력된다. <br>
+그리고 'printWithDelay'함수가 호출되면서 2초가 지난 후 async callback를 출력한다. <br>
 하지만 callback함수를 사용하여 비동기코드를 짜면 가독성도 매우 떨어지며 callback지옥을 경험하게 된다. <br>
 그것을 개선하고자 나온 것이 **promise**이다.  
 
