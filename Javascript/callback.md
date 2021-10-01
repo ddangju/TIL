@@ -66,3 +66,9 @@ printWithDelay(() => console.log('async callback'), 2000);
 그리고 `printWithDelay'함수가 호출되면서 2초가 지난 후 async callback를 출력한다. <br>
 하지만 callback함수를 사용하여 비동기코드를 짜면 가독성도 매우 떨어지며 callback지옥을 경험하게 된다. <br>
 그것을 개선하고자 나온 것이 **promise**이다.  
+
+
+<br>
+
+
+[promise 바로가기](https://github.com/ddangju/TIL/blob/master/Javascript/Promise%2Cthen%2Ccatch.md)
