@@ -6,6 +6,14 @@ function 함수() {
   console.log(this);   ///window가 출력된다. 
 }
 
+```
+
+위와 같이 함수 안에서 쓰거나 console로 확인하면 `whindow`가 출력된다.
+
+<br>
+
+```
+
 const 오브젝트 = {
   data : "yeon"
   function : function() {
@@ -24,7 +32,9 @@ const 오브젝트 = {
 ```
 
 
-위와 같이 **object**안에서의 **this**는 그 함수를 가지고 있는 **object**를 뜻한다. 즉, 나를 포함하고 있는 **object**
+위와 같이 **object**안에서의 **this**는 그 함수를 가지고 있는 **object**를 뜻한다. 
+
+즉, 나를 포함하고 있는 **object**! 
 
 <br>
 
@@ -77,3 +87,27 @@ const 오브젝트 = new 복사();
 
 
 
+- 이벤트리스너 안에서 쓰는 **this**는 `e.currentTarget`을 의미한다.
+
+```js
+document.getElementById('버튼').addEventListener('click', function(e){
+  console.log(this)  //// e.currentTarget과 똑같은 의미 
+});
+```
+
+<br>
+
+- 이벤트리스너 안에서 콜백함수를 쓴다면? 
+
+```js
+document.getElementById('버튼').addEventListener('click', function(e){
+  var 어레이 = [1,2,3];
+  어레이.forEach(function(){
+    console.log(this)
+  });
+});
+```
+
+forEach() 반복문 안에  **function(){}** 콜백함수를 사용한다면 `이벤트리스너`안에서 사용한것이 아니라 
+
+**e.currentTarget**은 아니다. 그렇기 때문에 **일반함수**랑 똑같아 `window`가 출력된다! 
