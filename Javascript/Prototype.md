@@ -175,4 +175,19 @@ const 어레이 = new Array(1,2,3);
 어레이.push();
 ```
 
+<br>
+
+
+array 말고도 object도 마찬가지이다
+
+```js
+
+const obj = {name : kim}
+
+const objt = new Object() 
+
+```
+
+모든 object 자료형은 **object 부모**를 이용하여 만들어진다. 즉 object의 기본함수(Object.prototyep)를 상속하여 사용할 수 있다.
+
 
