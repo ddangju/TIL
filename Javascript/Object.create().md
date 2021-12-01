@@ -1,4 +1,6 @@
-# Object.create() 
+# Object.create()  - 상속기능
+
+## ES5문법
 
 > Object.create() 메서드는 지정된 프로토타입으로 **새 객체**를 만든다. 
 
@@ -34,3 +36,48 @@ console.log(자식)
  그리고 그 아래 `Prototypoe`은 부모의 부모에 대한 객체와 속성의 값을 확인해 볼 수 있다. 
  
  그 값은 constructor의 `Object()` 인 것을 확인해 볼 수 있다.
+ 
+ <br>
+ 
+ 
+## ES6 문법
+
+``` js
+
+class 부모 {
+    constructor(){
+      this.name = "kim";    
+    }
+}
+
+const 자식 = new 부모(); ///부모의 object를 상속한다. 
+
+```
+
+<br>
+
+함수를 추가하고 싶을 떈?
+
+1. consstructor에 추가하거나, 
+2. constructor밖에서 사용한다. 
+
+ ```js
+ class 부모{
+     constructor(){
+      this.sayHi = function(){
+       ("함수만들기1")
+       }    
+     }
+     sayHi(){
+       console.log("함수만들기2")
+     }
+ }
+ ```
+ 
+ 하지만 두번째의 경우에는 `console.log(자식)`으로 확인해보면 복사하는 기능에 추가된 것이 아니라 **프로토타입**에 추가된 것이어서
+ 
+ 함수를 확인할수가 없다. 
+
+ 
+ 
+ 
