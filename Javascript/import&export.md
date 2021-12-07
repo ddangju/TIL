@@ -59,7 +59,7 @@ import {a,b} froom "경로";
 
 <br>
 
-## export default 와 export 동시에 사용하면? 
+## 3)export default 와 export 동시에 사용하면? 
 
 ```js
 var a = 10;
@@ -78,7 +78,7 @@ import c, {a,b} from '경로';
 
 <br>
 
-## `as`를 사용하면?
+##  4) `as`를 사용하면?
 
 ```js
 
