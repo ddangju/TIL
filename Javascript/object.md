@@ -159,7 +159,25 @@ a[b]는 계산된속성으로 b에 "c"를 할당해주고 console.log를 호출�
 a.b는 b의값 1이 나오게 된다! 
  
  
+ <br>
  
+ ## 추가예제)
+ 
+ ```js
+ const yeonju = {
+  id:"20",
+  name:"kim"
+}
+
+console.log(yeonju.id)///20
+console.log(yeonju["id"])///20
+console.log(yeonju[id]) /// referenceError: id is not defined
+
+ 
+ ```
+ `yoenju[id]`의 id는 계산된 값을 찾지만 **존재하지 않는 타입**이기 때문에 `id`를 계산할 수가 없어 레퍼런스 에러가 뜬다! 
+ 
+ 🚨 computed속성을 주의하자,,,! 
  
 <br>
 
