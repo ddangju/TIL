@@ -1,6 +1,9 @@
+
+
+
 ## 1) export default / import 
 
-> 다른 파일에 있는 변수 등을 가져다쓸 수 있다.
+> 다른 파일에 있는 특정한 변수 등을 가져다쓸 수 있다.
 
 <br>
 
@@ -9,6 +12,7 @@
 var a = 10; 
 
 export default a;
+
 ```
 
 
@@ -49,15 +53,17 @@ export {a,b};
 import {a,b} froom "경로";
 ```
 
-**export{변수명1, 변수명2}** 로 담아주고 가져올 수 있다. 
+import할 때 {변수명}으로 export으로 내보냈던 변수명과 똑같이 써줘야한다.
 
+<br>
 
 ## export default와 export차이점은?
 
-`export default`는 **한번**만 쓸 수 있고  import시엔 변수명을 **새롭게 작명**이 가능하다.
-`export`는 {변수명1, 변수명2}로 담을 수 있고 import시엔 **정확한 변수**명을 써주어야한다. 
+`export default`는 **한번**만 쓸 수 있고  import시엔 변수명을 **새롭게 작명**이 가능하다. 
+
 
 <br>
+
 
 ## 3)export default 와 export 동시에 사용하면? 
 
