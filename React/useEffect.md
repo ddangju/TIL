@@ -38,6 +38,92 @@ deps의 경우, **빈 배열**로 설정하면 컴포넌트가 **처음**나타�
 
 만약 넣지 않는다면 useEffect에 등록된 함수가 실행 될 때 최신 props 상태를 가르키지 않게 된다. 
 
+
+<br>
+
+예시)
+
+```js
+
+////////App.js
+
+import React, { useRef, useState } from "react";
+import UserList from "./UserList";
+
+
+function App(){
+
+  const [users, setUsers] = useState([
+    {
+      id: 1,
+      username: "김미미",
+      email: "김미미.com",
+      active: true
+    },
+    {
+      id: 2,
+      username: "박주주",
+      email: "박주주.com",
+      active: false
+    },
+    {
+      id: 3,
+      username: "김땅주",
+      email: "김땅주.com",
+      active: false
+    },
+    {
+      id: 4,
+      username: "김코지",
+      email: "김코지.com",
+      active: false
+    }
+  ]);
+  
+    const onRemove = (id) => {
+    console.log("지우기");
+    // user.id 가 파라미터로 일치하지 않는 원소만 추출해서 새로운 배열을 만듬
+    // = user.id 가 id 인 것을 제거함
+    setUsers(users.filter((user) => user.id !== id));
+  };
+  
+  return(
+  <>
+       <UserList users={users} onRemove={onRemove} />
+  </>
+  )
+}
+
+
+
+
+/////UserList.js
+import React, { useEffect } from "react";
+
+function User({ user, onRemove, onToggle }) {
+  useEffect(() => {
+    console.log("컴포넌트가 화면에 나타남");
+    console.log(user);
+    return () => {
+      console.log("컴포넌트가 화면에서 사라짐");
+      console.log(user);
+    };
+  }, [user]);
+  
+  return(
+  ///생략
+  )
+
+
+```
+
+
+<br>
+
+과정) 처음 페이지가 랜더가 되고 특정 아이디를 삭제 했을 때 
+![캡처](https://user-images.githubusercontent.com/68775082/148019002-019359b2-9ef2-4823-841d-b99e3a9d8c34.PNG)
+
+
 <br>
 
 ## deps 파라미터 생략하기 
