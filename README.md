@@ -1,5 +1,5 @@
 
-## 🖋Frontend study note 
+# 🖋ddangju 공부 기록
 
 <br>
 
