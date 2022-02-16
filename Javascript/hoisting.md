@@ -1,67 +1,116 @@
-## 호이스팅 (hoisting)
- 
-호이스팅이란? 함수 내부의 **선언문**을 모두 끌어올려서 해당 함수 유효 범위의 최상단에 선언하는 것을 말한다.
+## 호이스팅(Hoisting)
 
-**함수 선언식, var, let, const** 는 **호이스팅** 이 일어난다. 
+선언 단계가 최상단에 끌어올려지는것을 의미한다.
 
-**Var의 경우** 선언과 초기화가 동시에 일어나기 때문에 호이스팅이 되면 **undefined**가 일어난다. 
+호이스팅은 물리적으로 끌어올려지는것이 아니라, 자바스크립트 엔진이 코드를 실행하면서
+
+변수같은 정보를 실행컨텍스트 `환경 레코드Record(Environment Record)`에 기록해둔다. 
+
+환경 레코드는 `식별자`와 `식별자에 바인딩 된 값`을 기록해두는 `객체`이다. 
+
+호이스팅에는 `변수 호이스팅(Variable Hoisting)`과 `함수 호이스팅(Function Hoisting`이 있다.
+
 
 <br>
 
 
-var의 경우 예제)
+## 변수 호이스팅
 
-```jsx
 
-console.log(a); ////undefined(초기화)
+### - var 
+```js
 
-var a = 1
+console.log(a); /// undefined
 
-console.log(a); /// 1 
+var a = "foo";
+
+console.log(a) /// "foo"
 
 ```
 
+
+자바스크립트는 코드를 실행하면 전역 실행 컨텍스트를 `Call Stack`에 한 칸 넣는다. 
+
+그 후 코드를 스캔하면서 실행 컨텍스트 안에 있는 환경레코드에 `새로운 식별자 a`를 기록한다. 
+
+그리고 var로 변수를 선언했기 때문에 `undefined`로 값을 `초기화`해준다.
+
+> **여기까지 생성단계** 실행컨텍스트 생성하고 선언문만 먼저 실행 
+
+첫번재 콘솔로그를 출력하기 위해서 변수 a에 대한 바인딩 된 값을 참조하니 초기화된 `undefined`가 존재한다.
+
+그리고 문제없이 값을 `출력한다.`
+
+이후 코드를 읽다가 a에 "foo"라는 값을 할당하고 있는 것을 보고 변수 a를 환경레코드에 업데이트한다. 
+
+그리고 아래 콘솔로그에서 "foo"가 출력된다.
+
 <br>
 
+### - let과 const
 
-함수선언식 경우 예제)
+이 경우에도 a의 식별자를 환경레코드에 기록해두긴 하지만 값을 `초기화 하지는 않는다.` 
+
+그래서 값을 참조하려면 자바스크립트는 값을 읽지 못해 `reference error`가 발생한다.
+
+이것을 `Temporal Dead Zone` 라고도 한다. 
+
+선언 이전에 식별자를 참조할 수 없는 구역을 뜻한다. 
 
 
-```jsx
-catName("Chloe"); ///함수호출이 먼저 일어난다
+정리해보자면, `var`키워드로 변수를 선언하는 경우엔 `선언과 초기화`가 동시에 이루어진다.
 
-function catName(name) {
-  console.log("My cat's name is " + name);
+반면 let과 const로 변수를 선언하는 경우에는 `초기화`해두지 않는다.
+
+
+<br>
+
+## 함수 호이스팅
+
+### 함수 선언문
+
+선언과 동시에 함수가 생성되어 선언 전에도 함수를 사용할 수 있다.
+
+```js
+
+foo()
+
+function foo(){
+
 }
-/*
-위 코드의 결과는: "My cat's name is Chloe" 
-*/
-```
 
-<br> 
+/////{foo: f{}}
 
-
-하지만 **let과 const**의 경우에는 호이스팅이 일어나지만 선언과 초기화가 분리되어 진행되는데,
-
-호이스팅이 되면 선언이 진행되고 초기화는 진행되지 않아 `RefeerenceError`가 뜬다. 
-
-선언만 되었기 때문에 **참조오류**가 뜬다. 
-
-(let과 const가 호이스팅이 일어나지 않는다고 착각하지말자!)
-
-```jsx
- console.log(a);///ReferenceError: a is not defined
-
-let a = 1
-
-console.log(a);
 ```
 
 <br>
 
-# Temporal Dead Zone 
+### 함수 표현식
 
-위의 예제와 같이 **var와 let/const**와 같은 범위 차이는 **TDZ**에 의해 제약을 받는다는 것이다. 
+var의 경우 초기화(undefined)을 해준다. 
 
-즉, let/const 경우 변수가 초기화되기 전에 엑세스 하려고 하면 `ReferenceError`가 발생한다. 이는 호이스팅을 수행하기 때문에 나타나는 에러이다. 
+undefined는 호출이 될 수 없기 때문에 타입 에러가 발생한다.
+
+```js
+
+foo(); /// undefined
+
+var foo = () => {
+
+}
+```
+
+<br>
+
+const와 let의 경우에는 환경레코드에 기록된 값이 없어 `Reference Error`가 발생한다. 
+
+```js
+
+foo(); ///Reference Error
+
+const foo = () => {
+
+}
+
+```
 
