@@ -37,9 +37,8 @@ function 내함수(x :number|string){
 
 ```ts
 function 내함수(x : number|string){
-
-  let arr :number[] = [];
-  array[0] = x as number;
+	return (x as number) + 1
+	///x를 number로 
 }
 ```
 
@@ -56,7 +55,7 @@ function 내함수(x : number|string){
 
 
 
-### ✔ Narrowing 
+## ✔ Narrowing(방법 추가)
 
 ```ts
 
@@ -91,7 +90,7 @@ animal 인자에는 Fish나 Bird 형태만 들어올 수 있다.
 
 
 
-### ✔ class로부터 생산된 object라면 instanceof로 narrowing
+## ✔ class로부터 생산된 object라면 instanceof로 narrowing
 
 어떤 클래스로부터 `new`키워드로 생산된 object들이 있는데
 
@@ -111,7 +110,7 @@ if(날짜 instanceof Date){
 
 <br>
 
-### ✔ 인자에 들어오는 Type이 유사할 때 
+## ✔ 인자에 들어오는 Type이 유사할 때 
 
 
 ```ts
@@ -135,7 +134,7 @@ function 함수(x: Car | Bike){
 <br>
 
 
-### ✔ never타입
+## ✔ never타입
 
 ```ts
 
