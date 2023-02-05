@@ -47,7 +47,7 @@
 <br>
 
 
-## 💻Frontend
+## 💻CS
 
 - [웹소켓](https://github.com/ddangju/TIL/blob/master/Frontend/WebSocket.md) <br>
 - [웹팩&바벨](https://github.com/ddangju/TIL/blob/master/Frontend/%EC%9B%B9%ED%8C%A9%26%EB%B0%94%EB%B2%A8.md) <br>
