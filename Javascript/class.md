@@ -26,3 +26,16 @@ let test = new Test("연주");
 
 이때 인자로 받은 `"연주"`가 `this.name`에 할당된다. 
 
+## class 상속하기
+
+```js
+
+class Person{
+
+}
+
+test exrends Person{
+
+}
+```
+다른 클래스를 만들기 위해 extends키워드를 사용한다 
